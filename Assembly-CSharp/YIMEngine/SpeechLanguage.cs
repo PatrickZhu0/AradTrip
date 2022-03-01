@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace YIMEngine
+{
+	// Token: 0x02004A67 RID: 19047
+	public enum SpeechLanguage
+	{
+		// Token: 0x040133C5 RID: 78789
+		SPEECHLANG_MANDARIN,
+		// Token: 0x040133C6 RID: 78790
+		SPEECHLANG_YUEYU,
+		// Token: 0x040133C7 RID: 78791
+		SPEECHLANG_SICHUAN,
+		// Token: 0x040133C8 RID: 78792
+		SPEECHLANG_HENAN,
+		// Token: 0x040133C9 RID: 78793
+		SPEECHLANG_ENGLISH,
+		// Token: 0x040133CA RID: 78794
+		SPEECHLANG_TRADITIONAL
+	}
+}

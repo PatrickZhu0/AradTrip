@@ -1,0 +1,16 @@
+﻿using System;
+
+// Token: 0x02004171 RID: 16753
+public enum BDFrameDataTag
+{
+	// Token: 0x04010650 RID: 67152
+	FDT_NULL,
+	// Token: 0x04010651 RID: 67153
+	FDT_GRAPTRY,
+	// Token: 0x04010652 RID: 67154
+	FDT_GRAPED,
+	// Token: 0x04010653 RID: 67155
+	FDT_GRAPEDDECIDE = 4,
+	// Token: 0x04010654 RID: 67156
+	FDT_GRAPRELEASE = 8
+}

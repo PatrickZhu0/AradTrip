@@ -1,0 +1,35 @@
+﻿using System;
+
+namespace GameClient
+{
+	// Token: 0x02001358 RID: 4952
+	public enum GridType
+	{
+		// Token: 0x04006C64 RID: 27748
+		GT_NONE,
+		// Token: 0x04006C65 RID: 27749
+		GT_START,
+		// Token: 0x04006C66 RID: 27750
+		GT_END,
+		// Token: 0x04006C67 RID: 27751
+		GT_RANDOMGREETINGCARD,
+		// Token: 0x04006C68 RID: 27752
+		GT_RANDOMTURNTABLE,
+		// Token: 0x04006C69 RID: 27753
+		GT_RANDOMCHECKPOINT,
+		// Token: 0x04006C6A RID: 27754
+		GT_COIN25,
+		// Token: 0x04006C6B RID: 27755
+		GT_COIN15,
+		// Token: 0x04006C6C RID: 27756
+		GT_COIN10,
+		// Token: 0x04006C6D RID: 27757
+		GT_COIN5,
+		// Token: 0x04006C6E RID: 27758
+		GT_BASEREWARD,
+		// Token: 0x04006C6F RID: 27759
+		GT_RANDOMEVENT,
+		// Token: 0x04006C70 RID: 27760
+		GT_COUNT
+	}
+}

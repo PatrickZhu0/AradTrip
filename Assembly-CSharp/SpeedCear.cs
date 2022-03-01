@@ -1,0 +1,16 @@
+﻿using System;
+
+// Token: 0x0200416F RID: 16751
+public enum SpeedCear
+{
+	// Token: 0x04010643 RID: 67139
+	SPEEDCEAR_X = 1,
+	// Token: 0x04010644 RID: 67140
+	SPEEDCEAR_Y,
+	// Token: 0x04010645 RID: 67141
+	SPEEDCEAR_Z = 4,
+	// Token: 0x04010646 RID: 67142
+	SPEEDCEAR_XY = 3,
+	// Token: 0x04010647 RID: 67143
+	SPEEDCEAR_XYZ = 7
+}

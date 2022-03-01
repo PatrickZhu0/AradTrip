@@ -1,0 +1,27 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000636 RID: 1590
+	internal enum PetObjectAttr
+	{
+		// Token: 0x04001F8C RID: 8076
+		POA_INVALID,
+		// Token: 0x04001F8D RID: 8077
+		POA_LEVEL,
+		// Token: 0x04001F8E RID: 8078
+		POA_EXP,
+		// Token: 0x04001F8F RID: 8079
+		POA_HUNGER,
+		// Token: 0x04001F90 RID: 8080
+		POA_SKILL_INDEX,
+		// Token: 0x04001F91 RID: 8081
+		POA_GOLD_FEED_COUNT,
+		// Token: 0x04001F92 RID: 8082
+		POA_POINT_FEED_COUNT,
+		// Token: 0x04001F93 RID: 8083
+		POA_SELECT_SKILL_COUNT,
+		// Token: 0x04001F94 RID: 8084
+		POA_PET_SCORE
+	}
+}

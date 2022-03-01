@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000BB5 RID: 2997
+	public enum TCGridPropretyType
+	{
+		// Token: 0x04003C19 RID: 15385
+		TC_GRID_PRO_CD_DOWN_TIME = 1,
+		// Token: 0x04003C1A RID: 15386
+		TC_GRID_PRO_CD_END_STAMP,
+		// Token: 0x04003C1B RID: 15387
+		TC_GRID_PRO_ODD_BLOOD,
+		// Token: 0x04003C1C RID: 15388
+		TC_GRID_PRO_REVIVE_CD_STAMP,
+		// Token: 0x04003C1D RID: 15389
+		TC_GRID_PRO_MONSTER_PRO_ID,
+		// Token: 0x04003C1E RID: 15390
+		TC_GRID_PRO_DEAD_REASON
+	}
+}

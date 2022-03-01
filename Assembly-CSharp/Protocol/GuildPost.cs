@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000806 RID: 2054
+	public enum GuildPost
+	{
+		// Token: 0x04002B79 RID: 11129
+		GUILD_INVALID,
+		// Token: 0x04002B7A RID: 11130
+		GUILD_POST_NORMAL,
+		// Token: 0x04002B7B RID: 11131
+		GUILD_POST_ELITE,
+		// Token: 0x04002B7C RID: 11132
+		GUILD_POST_ELDER = 11,
+		// Token: 0x04002B7D RID: 11133
+		GUILD_POST_ASSISTANT,
+		// Token: 0x04002B7E RID: 11134
+		GUILD_POST_LEADER
+	}
+}

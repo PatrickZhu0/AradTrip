@@ -1,0 +1,18 @@
+﻿using System;
+
+// Token: 0x020046C6 RID: 18118
+public enum ReplayErrorCode
+{
+	// Token: 0x040124D6 RID: 74966
+	SUCCEED,
+	// Token: 0x040124D7 RID: 74967
+	FILE_NOT_FOUND,
+	// Token: 0x040124D8 RID: 74968
+	VERSION_NOT_MATCH,
+	// Token: 0x040124D9 RID: 74969
+	DOWNLOAD_FAILED,
+	// Token: 0x040124DA RID: 74970
+	HAS_TEAM,
+	// Token: 0x040124DB RID: 74971
+	COMPRESS_ERROR
+}

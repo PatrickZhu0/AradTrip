@@ -1,0 +1,16 @@
+﻿using System;
+
+// Token: 0x0200417E RID: 16766
+public enum GrabState
+{
+	// Token: 0x04010842 RID: 67650
+	NONE,
+	// Token: 0x04010843 RID: 67651
+	GRAPING,
+	// Token: 0x04010844 RID: 67652
+	ENDGRAPING,
+	// Token: 0x04010845 RID: 67653
+	WILL_BEGRAB,
+	// Token: 0x04010846 RID: 67654
+	BEING_GRAB
+}

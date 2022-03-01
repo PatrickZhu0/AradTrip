@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace FBSceneData
+{
+	// Token: 0x02004AFE RID: 19198
+	public enum DEntityType : sbyte
+	{
+		// Token: 0x04013797 RID: 79767
+		NPC,
+		// Token: 0x04013798 RID: 79768
+		MONSTER,
+		// Token: 0x04013799 RID: 79769
+		DECORATOR,
+		// Token: 0x0401379A RID: 79770
+		DESTRUCTIBLE,
+		// Token: 0x0401379B RID: 79771
+		REGION,
+		// Token: 0x0401379C RID: 79772
+		TRANSPORTDOOR,
+		// Token: 0x0401379D RID: 79773
+		BOSS,
+		// Token: 0x0401379E RID: 79774
+		ELITE,
+		// Token: 0x0401379F RID: 79775
+		BIRTHPOSITION,
+		// Token: 0x040137A0 RID: 79776
+		TOWNDOOR,
+		// Token: 0x040137A1 RID: 79777
+		FUNCTION_PREFAB,
+		// Token: 0x040137A2 RID: 79778
+		MONSTERDESTRUCT,
+		// Token: 0x040137A3 RID: 79779
+		HELLBIRTHPOSITION,
+		// Token: 0x040137A4 RID: 79780
+		MAX
+	}
+}

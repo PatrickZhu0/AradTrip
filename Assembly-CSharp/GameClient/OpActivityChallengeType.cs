@@ -1,0 +1,27 @@
+﻿using System;
+
+namespace GameClient
+{
+	// Token: 0x02001847 RID: 6215
+	public enum OpActivityChallengeType
+	{
+		// Token: 0x040095FD RID: 38397
+		OACT_MONSTER_ATTACK,
+		// Token: 0x040095FE RID: 38398
+		OACT_ELITE_DUNGEON,
+		// Token: 0x040095FF RID: 38399
+		OACT_ABYESS_DUNGEON,
+		// Token: 0x04009600 RID: 38400
+		OACT_ASCENT_DUNGEON,
+		// Token: 0x04009601 RID: 38401
+		OACT_TEAM_DUNGEON,
+		// Token: 0x04009602 RID: 38402
+		OACT_3V3_PK,
+		// Token: 0x04009603 RID: 38403
+		OACT_GUILD_BATTLE,
+		// Token: 0x04009604 RID: 38404
+		OACT_GUILD_DUNGEON,
+		// Token: 0x04009605 RID: 38405
+		OACT_2V2_PK
+	}
+}

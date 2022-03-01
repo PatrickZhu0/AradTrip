@@ -1,0 +1,20 @@
+﻿using System;
+
+// Token: 0x020041B0 RID: 16816
+public enum MonsterMode
+{
+	// Token: 0x04010A64 RID: 68196
+	NORMAL = 1,
+	// Token: 0x04010A65 RID: 68197
+	HELL,
+	// Token: 0x04010A66 RID: 68198
+	ANCIENT,
+	// Token: 0x04010A67 RID: 68199
+	DEADTOWER,
+	// Token: 0x04010A68 RID: 68200
+	SUMMON_PVE,
+	// Token: 0x04010A69 RID: 68201
+	SUMMON_PVP,
+	// Token: 0x04010A6A RID: 68202
+	COUNT
+}

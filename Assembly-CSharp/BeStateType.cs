@@ -1,0 +1,24 @@
+﻿using System;
+
+// Token: 0x0200417B RID: 16763
+public enum BeStateType
+{
+	// Token: 0x040107F1 RID: 67569
+	STAND = 1,
+	// Token: 0x040107F2 RID: 67570
+	WALK,
+	// Token: 0x040107F3 RID: 67571
+	JUMP = 4,
+	// Token: 0x040107F4 RID: 67572
+	SKILL = 8,
+	// Token: 0x040107F5 RID: 67573
+	FALLGROUND = 16,
+	// Token: 0x040107F6 RID: 67574
+	FLOAT = 32,
+	// Token: 0x040107F7 RID: 67575
+	GRAB = 64,
+	// Token: 0x040107F8 RID: 67576
+	DEAD = 128,
+	// Token: 0x040107F9 RID: 67577
+	BLOCK = 256
+}

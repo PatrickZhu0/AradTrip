@@ -1,0 +1,14 @@
+﻿using System;
+
+// Token: 0x02004BCA RID: 19402
+public enum DSFEntityStateTag
+{
+	// Token: 0x04013A96 RID: 80534
+	CLEARSPEED = 1,
+	// Token: 0x04013A97 RID: 80535
+	ACTIONHANDLE,
+	// Token: 0x04013A98 RID: 80536
+	MOVECTRL = 4,
+	// Token: 0x04013A99 RID: 80537
+	GRAPRELEASE = 8
+}

@@ -1,0 +1,35 @@
+﻿using System;
+
+namespace behaviac
+{
+	// Token: 0x020040EB RID: 16619
+	public enum DestinationType
+	{
+		// Token: 0x040101E0 RID: 66016
+		IDLE = 1,
+		// Token: 0x040101E1 RID: 66017
+		GO_TO_TARGET = 0,
+		// Token: 0x040101E2 RID: 66018
+		ESCAPE = 2,
+		// Token: 0x040101E3 RID: 66019
+		BYPASS_TRACK,
+		// Token: 0x040101E4 RID: 66020
+		Y_FIRST,
+		// Token: 0x040101E5 RID: 66021
+		FOLLOW,
+		// Token: 0x040101E6 RID: 66022
+		WANDER,
+		// Token: 0x040101E7 RID: 66023
+		KEEP_DISTANCE,
+		// Token: 0x040101E8 RID: 66024
+		FINAL_DOOR,
+		// Token: 0x040101E9 RID: 66025
+		WANDER_IN_CIRCLE,
+		// Token: 0x040101EA RID: 66026
+		WANDER_PKROBOT,
+		// Token: 0x040101EB RID: 66027
+		MOVETO_LEFT_SCENEEDGE,
+		// Token: 0x040101EC RID: 66028
+		GO_TO_TARGET2 = 13
+	}
+}

@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace GameClient
+{
+	// Token: 0x02004239 RID: 16953
+	public enum HitTextType
+	{
+		// Token: 0x04010D80 RID: 68992
+		NORMAL,
+		// Token: 0x04010D81 RID: 68993
+		CRITICAL,
+		// Token: 0x04010D82 RID: 68994
+		MISS,
+		// Token: 0x04010D83 RID: 68995
+		BUFF_HURT,
+		// Token: 0x04010D84 RID: 68996
+		RECOVE,
+		// Token: 0x04010D85 RID: 68997
+		MP_RECOVER,
+		// Token: 0x04010D86 RID: 68998
+		SPECIAL_ATTACK,
+		// Token: 0x04010D87 RID: 68999
+		BUFF_TEXT,
+		// Token: 0x04010D88 RID: 69000
+		GET_EXP,
+		// Token: 0x04010D89 RID: 69001
+		GET_GOLD,
+		// Token: 0x04010D8A RID: 69002
+		SKILL_CANNOTUSE,
+		// Token: 0x04010D8B RID: 69003
+		FRIEND_HURT
+	}
+}

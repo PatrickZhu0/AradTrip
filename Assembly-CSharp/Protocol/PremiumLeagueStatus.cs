@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000A5E RID: 2654
+	public enum PremiumLeagueStatus
+	{
+		// Token: 0x04003629 RID: 13865
+		PLS_INIT,
+		// Token: 0x0400362A RID: 13866
+		PLS_ENROLL,
+		// Token: 0x0400362B RID: 13867
+		PLS_PRELIMINAY,
+		// Token: 0x0400362C RID: 13868
+		PLS_FINAL_EIGHT_PREPARE,
+		// Token: 0x0400362D RID: 13869
+		PLS_FINAL_EIGHT,
+		// Token: 0x0400362E RID: 13870
+		PLS_FINAL_FOUR,
+		// Token: 0x0400362F RID: 13871
+		PLS_FINAL,
+		// Token: 0x04003630 RID: 13872
+		PLS_FINAL_WAIT_CLEAR
+	}
+}

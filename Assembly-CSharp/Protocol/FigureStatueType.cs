@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x0200080F RID: 2063
+	public enum FigureStatueType
+	{
+		// Token: 0x04002BCA RID: 11210
+		FST_INVALID,
+		// Token: 0x04002BCB RID: 11211
+		FST_GUILD,
+		// Token: 0x04002BCC RID: 11212
+		FST_GUILD_ASSISTANT,
+		// Token: 0x04002BCD RID: 11213
+		FST_GUILD_ASSISTANT_TWO,
+		// Token: 0x04002BCE RID: 11214
+		FST_GUILD_DUNGEON_FIRST,
+		// Token: 0x04002BCF RID: 11215
+		FST_GUILD_DUNGEON_SECOND,
+		// Token: 0x04002BD0 RID: 11216
+		FST_GUILD_DUNGEON_THIRD
+	}
+}

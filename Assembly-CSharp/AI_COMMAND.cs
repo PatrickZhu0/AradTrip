@@ -1,0 +1,18 @@
+﻿using System;
+
+// Token: 0x0200410C RID: 16652
+public enum AI_COMMAND
+{
+	// Token: 0x040102A1 RID: 66209
+	WALK,
+	// Token: 0x040102A2 RID: 66210
+	IDLE,
+	// Token: 0x040102A3 RID: 66211
+	ATTACK,
+	// Token: 0x040102A4 RID: 66212
+	SKILL,
+	// Token: 0x040102A5 RID: 66213
+	WALK_BACK,
+	// Token: 0x040102A6 RID: 66214
+	NONE
+}

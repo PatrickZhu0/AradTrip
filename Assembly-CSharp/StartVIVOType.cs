@@ -1,0 +1,14 @@
+﻿using System;
+
+// Token: 0x02004635 RID: 17973
+public enum StartVIVOType
+{
+	// Token: 0x0401220E RID: 74254
+	VIVOICON,
+	// Token: 0x0401220F RID: 74255
+	VIVOOPEN,
+	// Token: 0x04012210 RID: 74256
+	VIVOJUMPGAMECENTER,
+	// Token: 0x04012211 RID: 74257
+	VIVOPRIVILEGE
+}

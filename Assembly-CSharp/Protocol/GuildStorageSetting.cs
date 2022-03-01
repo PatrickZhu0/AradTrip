@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000810 RID: 2064
+	public enum GuildStorageSetting
+	{
+		// Token: 0x04002BD2 RID: 11218
+		GUILD_POST_INVALID,
+		// Token: 0x04002BD3 RID: 11219
+		GSS_WIN_PROBABILITY,
+		// Token: 0x04002BD4 RID: 11220
+		GSS_LOSE_PROBABILITY,
+		// Token: 0x04002BD5 RID: 11221
+		GSS_STORAGE_ADD_POST,
+		// Token: 0x04002BD6 RID: 11222
+		GSS_STORAGE_DEL_POST,
+		// Token: 0x04002BD7 RID: 11223
+		GSS_MAX
+	}
+}

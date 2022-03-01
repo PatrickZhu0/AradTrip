@@ -1,0 +1,14 @@
+﻿using System;
+
+// Token: 0x02004AB5 RID: 19125
+public enum MessageDownloadStatus
+{
+	// Token: 0x040135A7 RID: 79271
+	NOTDOWNLOAD,
+	// Token: 0x040135A8 RID: 79272
+	DOWNLOADING,
+	// Token: 0x040135A9 RID: 79273
+	DOWNLOADED,
+	// Token: 0x040135AA RID: 79274
+	DOWNLOAD_FAIL
+}

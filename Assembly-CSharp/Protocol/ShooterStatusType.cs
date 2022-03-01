@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x0200072D RID: 1837
+	public enum ShooterStatusType
+	{
+		// Token: 0x0400257D RID: 9597
+		SHOOTER_STATUS_UNKNOWN,
+		// Token: 0x0400257E RID: 9598
+		SHOOTER_STATUS_EXCELLENT,
+		// Token: 0x0400257F RID: 9599
+		SHOOTER_STATUS_GOOD,
+		// Token: 0x04002580 RID: 9600
+		SHOOTER_STATUS_INSTABLE,
+		// Token: 0x04002581 RID: 9601
+		SHOOTER_STATUS_COMMONLY
+	}
+}

@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000AC5 RID: 2757
+	public enum RoomStatus
+	{
+		// Token: 0x04003804 RID: 14340
+		ROOM_STATUS_INVALID,
+		// Token: 0x04003805 RID: 14341
+		ROOM_STATUS_OPEN,
+		// Token: 0x04003806 RID: 14342
+		ROOM_STATUS_READY,
+		// Token: 0x04003807 RID: 14343
+		ROOM_STATUS_MATCH,
+		// Token: 0x04003808 RID: 14344
+		ROOM_STATUS_BATTLE,
+		// Token: 0x04003809 RID: 14345
+		ROOM_STATUS_NUM
+	}
+}

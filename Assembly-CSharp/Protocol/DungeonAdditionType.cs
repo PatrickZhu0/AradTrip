@@ -1,0 +1,29 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x020007A7 RID: 1959
+	public enum DungeonAdditionType
+	{
+		// Token: 0x04002785 RID: 10117
+		EXP_BUFF,
+		// Token: 0x04002786 RID: 10118
+		EXP_VIP,
+		// Token: 0x04002787 RID: 10119
+		EXP_SCORE,
+		// Token: 0x04002788 RID: 10120
+		EXP_HARD,
+		// Token: 0x04002789 RID: 10121
+		EXP_GUILD_SKILL,
+		// Token: 0x0400278A RID: 10122
+		GOLD_VIP,
+		// Token: 0x0400278B RID: 10123
+		EXP_TAP,
+		// Token: 0x0400278C RID: 10124
+		EXP_FRIEND,
+		// Token: 0x0400278D RID: 10125
+		DUNGEON_EXP_ADD_ADVENTURE_TEAM,
+		// Token: 0x0400278E RID: 10126
+		DUNGEON_EXP_BASE
+	}
+}

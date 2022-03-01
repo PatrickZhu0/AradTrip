@@ -1,0 +1,14 @@
+﻿using System;
+
+// Token: 0x0200416D RID: 16749
+public enum AState
+{
+	// Token: 0x0401063B RID: 67131
+	ACS_FALL = 1,
+	// Token: 0x0401063C RID: 67132
+	ACS_JUMP,
+	// Token: 0x0401063D RID: 67133
+	AST_FALLGROUND = 4,
+	// Token: 0x0401063E RID: 67134
+	AST_DROPSCENE = 8
+}

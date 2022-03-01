@@ -1,0 +1,98 @@
+﻿using System;
+
+// Token: 0x02000130 RID: 304
+public enum SDKChannel
+{
+	// Token: 0x04000582 RID: 1410
+	NONE,
+	// Token: 0x04000583 RID: 1411
+	XY,
+	// Token: 0x04000584 RID: 1412
+	AISI,
+	// Token: 0x04000585 RID: 1413
+	TB,
+	// Token: 0x04000586 RID: 1414
+	MG,
+	// Token: 0x04000587 RID: 1415
+	SN79,
+	// Token: 0x04000588 RID: 1416
+	TestMG,
+	// Token: 0x04000589 RID: 1417
+	MGYingYB,
+	// Token: 0x0400058A RID: 1418
+	MGOther,
+	// Token: 0x0400058B RID: 1419
+	MGOtherHC,
+	// Token: 0x0400058C RID: 1420
+	HuaWei,
+	// Token: 0x0400058D RID: 1421
+	OPPO,
+	// Token: 0x0400058E RID: 1422
+	VIVO,
+	// Token: 0x0400058F RID: 1423
+	Lenovo,
+	// Token: 0x04000590 RID: 1424
+	KuPai,
+	// Token: 0x04000591 RID: 1425
+	JinLi,
+	// Token: 0x04000592 RID: 1426
+	MeiZu,
+	// Token: 0x04000593 RID: 1427
+	BaiDu,
+	// Token: 0x04000594 RID: 1428
+	XiaoMi,
+	// Token: 0x04000595 RID: 1429
+	UC,
+	// Token: 0x04000596 RID: 1430
+	SanXing,
+	// Token: 0x04000597 RID: 1431
+	M4399,
+	// Token: 0x04000598 RID: 1432
+	M360,
+	// Token: 0x04000599 RID: 1433
+	M915,
+	// Token: 0x0400059A RID: 1434
+	JUNHAI,
+	// Token: 0x0400059B RID: 1435
+	JoyLand,
+	// Token: 0x0400059C RID: 1436
+	ZY,
+	// Token: 0x0400059D RID: 1437
+	ZYOL,
+	// Token: 0x0400059E RID: 1438
+	ZYYH,
+	// Token: 0x0400059F RID: 1439
+	ZYHD,
+	// Token: 0x040005A0 RID: 1440
+	ZYWZ,
+	// Token: 0x040005A1 RID: 1441
+	ZYYZ,
+	// Token: 0x040005A2 RID: 1442
+	ZYYS,
+	// Token: 0x040005A3 RID: 1443
+	ZYGB,
+	// Token: 0x040005A4 RID: 1444
+	ZYLK,
+	// Token: 0x040005A5 RID: 1445
+	ZYMG,
+	// Token: 0x040005A6 RID: 1446
+	ZYYY,
+	// Token: 0x040005A7 RID: 1447
+	ZYNL,
+	// Token: 0x040005A8 RID: 1448
+	ZYSY,
+	// Token: 0x040005A9 RID: 1449
+	TestInMG,
+	// Token: 0x040005AA RID: 1450
+	DYCC,
+	// Token: 0x040005AB RID: 1451
+	MGDY,
+	// Token: 0x040005AC RID: 1452
+	DYAY,
+	// Token: 0x040005AD RID: 1453
+	MGOther915,
+	// Token: 0x040005AE RID: 1454
+	ZYOther,
+	// Token: 0x040005AF RID: 1455
+	COUNT
+}

@@ -1,0 +1,16 @@
+﻿using System;
+
+// Token: 0x0200416C RID: 16748
+public enum AStateTag
+{
+	// Token: 0x04010635 RID: 67125
+	AST_NULLTAG,
+	// Token: 0x04010636 RID: 67126
+	AST_CONTROLED,
+	// Token: 0x04010637 RID: 67127
+	AST_BUSY,
+	// Token: 0x04010638 RID: 67128
+	AST_LOCKZ = 4,
+	// Token: 0x04010639 RID: 67129
+	AST_NORMALSKILL = 8
+}

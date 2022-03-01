@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000BAB RID: 2987
+	public enum TeamCopyTeamStatus
+	{
+		// Token: 0x04003BE1 RID: 15329
+		TEAM_COPY_TEAM_STATUS_PARPARE,
+		// Token: 0x04003BE2 RID: 15330
+		TEAM_COPY_TEAM_STATUS_BATTLE,
+		// Token: 0x04003BE3 RID: 15331
+		TEAM_COPY_TEAM_STATUS_VICTORY,
+		// Token: 0x04003BE4 RID: 15332
+		TEAM_COPY_TEAM_STATUS_FAILED
+	}
+}

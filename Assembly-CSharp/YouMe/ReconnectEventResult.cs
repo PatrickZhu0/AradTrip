@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace YouMe
+{
+	// Token: 0x02004AA6 RID: 19110
+	public enum ReconnectEventResult
+	{
+		// Token: 0x0401355A RID: 79194
+		RECONNECTRESULT_SUCCESS,
+		// Token: 0x0401355B RID: 79195
+		RECONNECTRESULT_FAIL_AGAIN,
+		// Token: 0x0401355C RID: 79196
+		RECONNECTRESULT_FAIL,
+		// Token: 0x0401355D RID: 79197
+		RECONNECTRESULT_STARTING_RECONNECT
+	}
+}

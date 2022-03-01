@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000BB6 RID: 2998
+	public enum TCGridObjDeadReason
+	{
+		// Token: 0x04003C20 RID: 15392
+		TC_OBJ_DEAD_REASON_LIVE,
+		// Token: 0x04003C21 RID: 15393
+		TC_OBJ_DEAD_REASON_SQUAD_DESTORY,
+		// Token: 0x04003C22 RID: 15394
+		TC_OBJ_DEAD_REASON_GATE_LINK,
+		// Token: 0x04003C23 RID: 15395
+		TC_OBJ_DEAD_REASON_ENTER_MAIN_CITY
+	}
+}

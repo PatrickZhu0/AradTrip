@@ -1,0 +1,95 @@
+﻿using System;
+
+namespace Spine
+{
+	// Token: 0x0200498E RID: 18830
+	public class ScaleTimeline : TranslateTimeline
+	{
+		// Token: 0x0601B0A6 RID: 110758 RVA: 0x008527D6 File Offset: 0x00850BD6
+		public ScaleTimeline(int frameCount) : base(frameCount)
+		{
+		}
+
+		// Token: 0x170022D2 RID: 8914
+		// (get) Token: 0x0601B0A7 RID: 110759 RVA: 0x008527DF File Offset: 0x00850BDF
+		public override int PropertyId
+		{
+			get
+			{
+				return 33554432 + this.boneIndex;
+			}
+		}
+
+		// Token: 0x0601B0A8 RID: 110760 RVA: 0x008527F0 File Offset: 0x00850BF0
+		public override void Apply(Skeleton skeleton, float lastTime, float time, ExposedList<Event> firedEvents, float alpha, MixPose pose, MixDirection direction)
+		{
+			Bone bone = skeleton.bones.Items[this.boneIndex];
+			float[] frames = this.frames;
+			if (time >= frames[0])
+			{
+				float num;
+				float num2;
+				if (time >= frames[frames.Length - 3])
+				{
+					num = frames[frames.Length + -2] * bone.data.scaleX;
+					num2 = frames[frames.Length + -1] * bone.data.scaleY;
+				}
+				else
+				{
+					int num3 = Animation.BinarySearch(frames, time, 3);
+					num = frames[num3 + -2];
+					num2 = frames[num3 + -1];
+					float num4 = frames[num3];
+					float curvePercent = base.GetCurvePercent(num3 / 3 - 1, 1f - (time - num4) / (frames[num3 + -3] - num4));
+					num = (num + (frames[num3 + 1] - num) * curvePercent) * bone.data.scaleX;
+					num2 = (num2 + (frames[num3 + 2] - num2) * curvePercent) * bone.data.scaleY;
+				}
+				if (alpha == 1f)
+				{
+					bone.scaleX = num;
+					bone.scaleY = num2;
+				}
+				else
+				{
+					float num5;
+					float num6;
+					if (pose == MixPose.Setup)
+					{
+						num5 = bone.data.scaleX;
+						num6 = bone.data.scaleY;
+					}
+					else
+					{
+						num5 = bone.scaleX;
+						num6 = bone.scaleY;
+					}
+					if (direction == MixDirection.Out)
+					{
+						num = ((num < 0f) ? (-num) : num) * (float)((num5 < 0f) ? -1 : 1);
+						num2 = ((num2 < 0f) ? (-num2) : num2) * (float)((num6 < 0f) ? -1 : 1);
+					}
+					else
+					{
+						num5 = ((num5 < 0f) ? (-num5) : num5) * (float)((num < 0f) ? -1 : 1);
+						num6 = ((num6 < 0f) ? (-num6) : num6) * (float)((num2 < 0f) ? -1 : 1);
+					}
+					bone.scaleX = num5 + (num - num5) * alpha;
+					bone.scaleY = num6 + (num2 - num6) * alpha;
+				}
+				return;
+			}
+			if (pose == MixPose.Setup)
+			{
+				bone.scaleX = bone.data.scaleX;
+				bone.scaleY = bone.data.scaleY;
+				return;
+			}
+			if (pose != MixPose.Current)
+			{
+				return;
+			}
+			bone.scaleX += (bone.data.scaleX - bone.scaleX) * alpha;
+			bone.scaleY += (bone.data.scaleY - bone.scaleY) * alpha;
+		}
+	}
+}

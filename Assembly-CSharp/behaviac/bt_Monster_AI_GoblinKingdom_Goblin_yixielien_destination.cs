@@ -1,0 +1,133 @@
+﻿using System;
+
+namespace behaviac
+{
+	// Token: 0x0200336D RID: 13165
+	public static class bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination
+	{
+		// Token: 0x06014F39 RID: 85817 RVA: 0x0064FBAC File Offset: 0x0064DFAC
+		public static bool build_behavior_tree(BehaviorTree bt)
+		{
+			bt.SetClassNameString("BehaviorTree");
+			bt.SetId(-1);
+			bt.SetName("Monster_AI/GoblinKingdom/Goblin_yixielien_destination");
+			bt.IsFSM = false;
+			Selector selector = new Selector();
+			selector.SetClassNameString("Selector");
+			selector.SetId(3);
+			bt.AddChild(selector);
+			Sequence sequence = new Sequence();
+			sequence.SetClassNameString("Sequence");
+			sequence.SetId(1);
+			selector.AddChild(sequence);
+			Assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node7 assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node = new Assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node7();
+			assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.SetClassNameString("Assignment");
+			assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.SetId(7);
+			sequence.AddChild(assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node);
+			sequence.SetHasEvents(sequence.HasEvents() | assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.HasEvents());
+			Assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4 assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2 = new Assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4();
+			assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.SetClassNameString("Assignment");
+			assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.SetId(4);
+			sequence.AddChild(assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2);
+			sequence.SetHasEvents(sequence.HasEvents() | assignment_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.HasEvents());
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.SetId(5);
+			sequence.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node);
+			sequence.SetHasEvents(sequence.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.HasEvents());
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node8 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node8();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.SetId(8);
+			sequence.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2);
+			sequence.SetHasEvents(sequence.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.HasEvents());
+			Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node0 action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node = new Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node0();
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.SetClassNameString("Action");
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.SetId(0);
+			sequence.AddChild(action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node);
+			sequence.SetHasEvents(sequence.HasEvents() | action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node.HasEvents());
+			selector.SetHasEvents(selector.HasEvents() | sequence.HasEvents());
+			Sequence sequence2 = new Sequence();
+			sequence2.SetClassNameString("Sequence");
+			sequence2.SetId(2);
+			selector.AddChild(sequence2);
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node9 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node9();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3.SetId(9);
+			sequence2.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3);
+			sequence2.SetHasEvents(sequence2.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3.HasEvents());
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node11 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node11();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4.SetId(11);
+			sequence2.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4);
+			sequence2.SetHasEvents(sequence2.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4.HasEvents());
+			Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node14 action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2 = new Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node14();
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.SetClassNameString("Action");
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.SetId(14);
+			sequence2.AddChild(action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2);
+			sequence2.SetHasEvents(sequence2.HasEvents() | action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node2.HasEvents());
+			selector.SetHasEvents(selector.HasEvents() | sequence2.HasEvents());
+			Sequence sequence3 = new Sequence();
+			sequence3.SetClassNameString("Sequence");
+			sequence3.SetId(10);
+			selector.AddChild(sequence3);
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node12 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node12();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5.SetId(12);
+			sequence3.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5);
+			sequence3.SetHasEvents(sequence3.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5.HasEvents());
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node13 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node6 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node13();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node6.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node6.SetId(13);
+			sequence3.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node6);
+			sequence3.SetHasEvents(sequence3.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node6.HasEvents());
+			Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node6 action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3 = new Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node6();
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3.SetClassNameString("Action");
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3.SetId(6);
+			sequence3.AddChild(action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3);
+			sequence3.SetHasEvents(sequence3.HasEvents() | action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node3.HasEvents());
+			selector.SetHasEvents(selector.HasEvents() | sequence3.HasEvents());
+			Sequence sequence4 = new Sequence();
+			sequence4.SetClassNameString("Sequence");
+			sequence4.SetId(15);
+			selector.AddChild(sequence4);
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node17 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node7 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node17();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node7.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node7.SetId(17);
+			sequence4.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node7);
+			sequence4.SetHasEvents(sequence4.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node7.HasEvents());
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node18 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node8 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node18();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node8.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node8.SetId(18);
+			sequence4.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node8);
+			sequence4.SetHasEvents(sequence4.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node8.HasEvents());
+			Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node19 action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4 = new Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node19();
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4.SetClassNameString("Action");
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4.SetId(19);
+			sequence4.AddChild(action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4);
+			sequence4.SetHasEvents(sequence4.HasEvents() | action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node4.HasEvents());
+			selector.SetHasEvents(selector.HasEvents() | sequence4.HasEvents());
+			Sequence sequence5 = new Sequence();
+			sequence5.SetClassNameString("Sequence");
+			sequence5.SetId(16);
+			selector.AddChild(sequence5);
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node20 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node9 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node20();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node9.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node9.SetId(20);
+			sequence5.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node9);
+			sequence5.SetHasEvents(sequence5.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node9.HasEvents());
+			Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node21 condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node10 = new Condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node21();
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node10.SetClassNameString("Condition");
+			condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node10.SetId(21);
+			sequence5.AddChild(condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node10);
+			sequence5.SetHasEvents(sequence5.HasEvents() | condition_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node10.HasEvents());
+			Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node22 action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5 = new Action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node22();
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5.SetClassNameString("Action");
+			action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5.SetId(22);
+			sequence5.AddChild(action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5);
+			sequence5.SetHasEvents(sequence5.HasEvents() | action_bt_Monster_AI_GoblinKingdom_Goblin_yixielien_destination_node5.HasEvents());
+			selector.SetHasEvents(selector.HasEvents() | sequence5.HasEvents());
+			bt.SetHasEvents(bt.HasEvents() | selector.HasEvents());
+			return true;
+		}
+	}
+}

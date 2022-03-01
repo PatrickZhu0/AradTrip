@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace YIMEngine
+{
+	// Token: 0x02004A6E RID: 19054
+	public enum AddFriendStatus
+	{
+		// Token: 0x040133E9 RID: 78825
+		STATUS_ADD_SUCCESS,
+		// Token: 0x040133EA RID: 78826
+		STATUS_ADD_FAILED,
+		// Token: 0x040133EB RID: 78827
+		STATUS_WAIT_OTHER_VALIDATE,
+		// Token: 0x040133EC RID: 78828
+		STATUS_WAIT_ME_VALIDATE
+	}
+}

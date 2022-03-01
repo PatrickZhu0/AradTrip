@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000642 RID: 1602
+	public enum OppoAmberLevel
+	{
+		// Token: 0x040020AF RID: 8367
+		OAL_NONE,
+		// Token: 0x040020B0 RID: 8368
+		OAL_GREEN_ONE,
+		// Token: 0x040020B1 RID: 8369
+		OAL_GREEN_TWO,
+		// Token: 0x040020B2 RID: 8370
+		OAL_GREEN_THREE,
+		// Token: 0x040020B3 RID: 8371
+		OAL_BLUE_ONE,
+		// Token: 0x040020B4 RID: 8372
+		OAL_BLUE_TWO,
+		// Token: 0x040020B5 RID: 8373
+		OAL_BLUE_THREE,
+		// Token: 0x040020B6 RID: 8374
+		OAL_GOLD_ONE,
+		// Token: 0x040020B7 RID: 8375
+		OAL_GOLD_TWO,
+		// Token: 0x040020B8 RID: 8376
+		OAL_GOLD_THREE,
+		// Token: 0x040020B9 RID: 8377
+		OAL_RED,
+		// Token: 0x040020BA RID: 8378
+		OAL_PURPLE
+	}
+}

@@ -1,0 +1,24 @@
+﻿using System;
+
+// Token: 0x02004BC8 RID: 19400
+public enum DSFEntityStates
+{
+	// Token: 0x04013A87 RID: 80519
+	IDLE,
+	// Token: 0x04013A88 RID: 80520
+	ATTACK,
+	// Token: 0x04013A89 RID: 80521
+	RUN = 3,
+	// Token: 0x04013A8A RID: 80522
+	WALK = 2,
+	// Token: 0x04013A8B RID: 80523
+	HURT = 4,
+	// Token: 0x04013A8C RID: 80524
+	JUMP,
+	// Token: 0x04013A8D RID: 80525
+	JUMPBACK,
+	// Token: 0x04013A8E RID: 80526
+	FALL = 9,
+	// Token: 0x04013A8F RID: 80527
+	CASTSKILL = 14
+}

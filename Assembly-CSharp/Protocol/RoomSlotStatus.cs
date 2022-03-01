@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000AC6 RID: 2758
+	public enum RoomSlotStatus
+	{
+		// Token: 0x0400380B RID: 14347
+		ROOM_SLOT_STATUS_INVALID,
+		// Token: 0x0400380C RID: 14348
+		ROOM_SLOT_STATUS_OPEN,
+		// Token: 0x0400380D RID: 14349
+		ROOM_SLOT_STATUS_CLOSE,
+		// Token: 0x0400380E RID: 14350
+		ROOM_SLOT_STATUS_WAIT,
+		// Token: 0x0400380F RID: 14351
+		ROOM_SLOT_STATUS_OFFLINE,
+		// Token: 0x04003810 RID: 14352
+		ROOM_SLOT_STATUS_NUM
+	}
+}

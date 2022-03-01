@@ -1,0 +1,12 @@
+﻿using System;
+
+// Token: 0x0200410D RID: 16653
+public enum AI_COMMAND_STAT
+{
+	// Token: 0x040102A8 RID: 66216
+	READY,
+	// Token: 0x040102A9 RID: 66217
+	RUNNING,
+	// Token: 0x040102AA RID: 66218
+	STOP
+}

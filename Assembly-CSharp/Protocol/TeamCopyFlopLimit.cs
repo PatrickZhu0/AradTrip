@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000BAE RID: 2990
+	public enum TeamCopyFlopLimit
+	{
+		// Token: 0x04003BEF RID: 15343
+		TEAM_COPY_FLOP_LIMIT_NULL,
+		// Token: 0x04003BF0 RID: 15344
+		TEAM_COPY_FLOP_LIMIT_DAY,
+		// Token: 0x04003BF1 RID: 15345
+		TEAM_COPY_FLOP_LIMIT_WEEK,
+		// Token: 0x04003BF2 RID: 15346
+		TEAM_COPY_FLOP_LIMIT_PASS_GATE
+	}
+}

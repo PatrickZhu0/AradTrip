@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x020009E9 RID: 2537
+	public enum EquipAbnormalResist
+	{
+		// Token: 0x040033A9 RID: 13225
+		EAR_FLASH,
+		// Token: 0x040033AA RID: 13226
+		EAR_BLEEDING,
+		// Token: 0x040033AB RID: 13227
+		EAR_BURN,
+		// Token: 0x040033AC RID: 13228
+		EAR_POISON,
+		// Token: 0x040033AD RID: 13229
+		EAR_BLIND,
+		// Token: 0x040033AE RID: 13230
+		EAR_STUN,
+		// Token: 0x040033AF RID: 13231
+		EAR_STONE,
+		// Token: 0x040033B0 RID: 13232
+		EAR_FROZEN,
+		// Token: 0x040033B1 RID: 13233
+		EAR_SLEEP,
+		// Token: 0x040033B2 RID: 13234
+		EAR_CONFUNSE,
+		// Token: 0x040033B3 RID: 13235
+		EAR_STRAIN,
+		// Token: 0x040033B4 RID: 13236
+		EAR_SPEED_DOWN,
+		// Token: 0x040033B5 RID: 13237
+		EAR_CURSE,
+		// Token: 0x040033B6 RID: 13238
+		EAR_MAX
+	}
+}

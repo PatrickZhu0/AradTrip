@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000AC4 RID: 2756
+	public enum RoomType
+	{
+		// Token: 0x040037FD RID: 14333
+		ROOM_TYPE_INVALID,
+		// Token: 0x040037FE RID: 14334
+		ROOM_TYPE_THREE_FREE,
+		// Token: 0x040037FF RID: 14335
+		ROOM_TYPE_THREE_MATCH,
+		// Token: 0x04003800 RID: 14336
+		ROOM_TYPE_THREE_SCORE_WAR,
+		// Token: 0x04003801 RID: 14337
+		ROOM_TYPE_MELEE,
+		// Token: 0x04003802 RID: 14338
+		ROOM_TYPE_MAX
+	}
+}

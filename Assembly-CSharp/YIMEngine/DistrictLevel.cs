@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace YIMEngine
+{
+	// Token: 0x02004A65 RID: 19045
+	public enum DistrictLevel
+	{
+		// Token: 0x040133BA RID: 78778
+		DISTRICT_UNKNOW,
+		// Token: 0x040133BB RID: 78779
+		DISTRICT_COUNTRY,
+		// Token: 0x040133BC RID: 78780
+		DISTRICT_PROVINCE,
+		// Token: 0x040133BD RID: 78781
+		DISTRICT_CITY,
+		// Token: 0x040133BE RID: 78782
+		DISTRICT_COUNTY,
+		// Token: 0x040133BF RID: 78783
+		DISTRICT_STREET
+	}
+}

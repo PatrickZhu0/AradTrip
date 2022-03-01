@@ -1,0 +1,138 @@
+﻿using System;
+
+namespace behaviac
+{
+	// Token: 0x020031FA RID: 12794
+	public static class bt_Monster_AI_Chapter9_9_5_Zui_Zui_2
+	{
+		// Token: 0x06014C80 RID: 85120 RVA: 0x006426CC File Offset: 0x00640ACC
+		public static bool build_behavior_tree(BehaviorTree bt)
+		{
+			bt.SetClassNameString("BehaviorTree");
+			bt.SetId(-1);
+			bt.SetName("Monster_AI/Chapter9/9-5_Zui_Zui_2");
+			bt.IsFSM = false;
+			Parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node0 parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node = new Parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node0();
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetClassNameString("Parallel");
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetId(0);
+			bt.AddChild(parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node);
+			Sequence sequence = new Sequence();
+			sequence.SetClassNameString("Sequence");
+			sequence.SetId(1);
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.AddChild(sequence);
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetId(6);
+			sequence.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node);
+			sequence.SetHasEvents(sequence.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.HasEvents());
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2 = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2.SetId(4);
+			sequence.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2);
+			sequence.SetHasEvents(sequence.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node10 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node10();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetId(10);
+			sequence.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node);
+			sequence.SetHasEvents(sequence.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2.SetId(3);
+			sequence.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2);
+			sequence.SetHasEvents(sequence.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node2.HasEvents());
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetHasEvents(parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.HasEvents() | sequence.HasEvents());
+			Sequence sequence2 = new Sequence();
+			sequence2.SetClassNameString("Sequence");
+			sequence2.SetId(2);
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.AddChild(sequence2);
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3 = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3.SetId(5);
+			sequence2.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3);
+			sequence2.SetHasEvents(sequence2.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node9 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node9();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3.SetId(9);
+			sequence2.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3);
+			sequence2.SetHasEvents(sequence2.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node3.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4.SetId(7);
+			sequence2.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4);
+			sequence2.SetHasEvents(sequence2.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node11 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node11();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5.SetId(11);
+			sequence2.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5);
+			sequence2.SetHasEvents(sequence2.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6.SetId(8);
+			sequence2.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6);
+			sequence2.SetHasEvents(sequence2.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6.HasEvents());
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetHasEvents(parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.HasEvents() | sequence2.HasEvents());
+			Sequence sequence3 = new Sequence();
+			sequence3.SetClassNameString("Sequence");
+			sequence3.SetId(12);
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.AddChild(sequence3);
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node13 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4 = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node13();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4.SetId(13);
+			sequence3.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4);
+			sequence3.SetHasEvents(sequence3.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node4.HasEvents());
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node18 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5 = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node18();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5.SetId(18);
+			sequence3.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5);
+			sequence3.SetHasEvents(sequence3.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node5.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node15 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node15();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7.SetId(15);
+			sequence3.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7);
+			sequence3.SetHasEvents(sequence3.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node16 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node16();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8.SetId(16);
+			sequence3.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8);
+			sequence3.SetHasEvents(sequence3.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node14 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node9 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node14();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node9.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node9.SetId(14);
+			sequence3.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node9);
+			sequence3.SetHasEvents(sequence3.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node9.HasEvents());
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node21 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6 = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node21();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6.SetId(21);
+			sequence3.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6);
+			sequence3.SetHasEvents(sequence3.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node6.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node17 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node10 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node17();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node10.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node10.SetId(17);
+			sequence3.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node10);
+			sequence3.SetHasEvents(sequence3.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node10.HasEvents());
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetHasEvents(parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.HasEvents() | sequence3.HasEvents());
+			Sequence sequence4 = new Sequence();
+			sequence4.SetClassNameString("Sequence");
+			sequence4.SetId(22);
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.AddChild(sequence4);
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node23 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7 = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node23();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7.SetId(23);
+			sequence4.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7);
+			sequence4.SetHasEvents(sequence4.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node7.HasEvents());
+			Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node24 condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8 = new Condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node24();
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8.SetClassNameString("Condition");
+			condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8.SetId(24);
+			sequence4.AddChild(condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8);
+			sequence4.SetHasEvents(sequence4.HasEvents() | condition_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node8.HasEvents());
+			Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node25 action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node11 = new Action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node25();
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node11.SetClassNameString("Action");
+			action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node11.SetId(25);
+			sequence4.AddChild(action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node11);
+			sequence4.SetHasEvents(sequence4.HasEvents() | action_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node11.HasEvents());
+			parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.SetHasEvents(parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.HasEvents() | sequence4.HasEvents());
+			bt.SetHasEvents(bt.HasEvents() | parallel_bt_Monster_AI_Chapter9_9_5_Zui_Zui_2_node.HasEvents());
+			return true;
+		}
+	}
+}

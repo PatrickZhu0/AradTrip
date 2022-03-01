@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace behaviac
+{
+	// Token: 0x02003028 RID: 12328
+	[GeneratedTypeMetaInfo]
+	internal class Condition_bt_Monster_AI_BOSS_DestinationSelect_BOSS_DestinationSelect_2_4_0dumaowang_DestinationSelect_node6 : Condition
+	{
+		// Token: 0x06014918 RID: 84248 RVA: 0x0063146F File Offset: 0x0062F86F
+		public Condition_bt_Monster_AI_BOSS_DestinationSelect_BOSS_DestinationSelect_2_4_0dumaowang_DestinationSelect_node6()
+		{
+			this.opl_p0 = 3000;
+			this.opl_p1 = 3000;
+			this.opl_p2 = 3000;
+			this.opl_p3 = 3000;
+		}
+
+		// Token: 0x06014919 RID: 84249 RVA: 0x006314A4 File Offset: 0x0062F8A4
+		protected override EBTStatus update_impl(Agent pAgent, EBTStatus childStatus)
+		{
+			bool flag = ((BTAgent)pAgent).Condition_IsTargetInAttackArea(this.opl_p0, this.opl_p1, this.opl_p2, this.opl_p3);
+			bool flag2 = true;
+			bool flag3 = flag == flag2;
+			return (!flag3) ? EBTStatus.BT_FAILURE : EBTStatus.BT_SUCCESS;
+		}
+
+		// Token: 0x0400E275 RID: 57973
+		private int opl_p0;
+
+		// Token: 0x0400E276 RID: 57974
+		private int opl_p1;
+
+		// Token: 0x0400E277 RID: 57975
+		private int opl_p2;
+
+		// Token: 0x0400E278 RID: 57976
+		private int opl_p3;
+	}
+}

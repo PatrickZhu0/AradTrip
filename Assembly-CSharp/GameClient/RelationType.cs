@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace GameClient
+{
+	// Token: 0x020019E1 RID: 6625
+	public enum RelationType
+	{
+		// Token: 0x0400A460 RID: 42080
+		RELATION_NONE,
+		// Token: 0x0400A461 RID: 42081
+		RELATION_FRIEND,
+		// Token: 0x0400A462 RID: 42082
+		RELATION_BLACKLIST,
+		// Token: 0x0400A463 RID: 42083
+		RELATION_STRANGER,
+		// Token: 0x0400A464 RID: 42084
+		RELATION_MASTER,
+		// Token: 0x0400A465 RID: 42085
+		RELATION_DISCIPLE,
+		// Token: 0x0400A466 RID: 42086
+		RELATION_MAX
+	}
+}

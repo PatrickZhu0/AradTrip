@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x02000C4D RID: 3149
+	public enum DeleteTaskReason
+	{
+		// Token: 0x04003E8F RID: 16015
+		DELETE_TASK_REASON_SUBMIT = 1,
+		// Token: 0x04003E90 RID: 16016
+		DELETE_TASK_REASON_ABANDON,
+		// Token: 0x04003E91 RID: 16017
+		DELETE_TASK_REASON_SYSTEM,
+		// Token: 0x04003E92 RID: 16018
+		DELETE_TASK_REASON_OTHER
+	}
+}

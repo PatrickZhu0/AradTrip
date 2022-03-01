@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace YIMEngine
+{
+	// Token: 0x02004A66 RID: 19046
+	public enum AccusationDealResult
+	{
+		// Token: 0x040133C1 RID: 78785
+		ACCUSATIONRESULT_IGNORE,
+		// Token: 0x040133C2 RID: 78786
+		ACCUSATIONRESULT_WARNING,
+		// Token: 0x040133C3 RID: 78787
+		ACCUSATIONRESULT_FROBIDDEN_SPEAK
+	}
+}

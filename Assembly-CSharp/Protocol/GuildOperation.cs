@@ -1,0 +1,35 @@
+﻿using System;
+
+namespace Protocol
+{
+	// Token: 0x0200080C RID: 2060
+	public enum GuildOperation
+	{
+		// Token: 0x04002BB5 RID: 11189
+		MODIFY_DECLAR,
+		// Token: 0x04002BB6 RID: 11190
+		MODIFY_NAME,
+		// Token: 0x04002BB7 RID: 11191
+		MODIFY_ANNOUNCE,
+		// Token: 0x04002BB8 RID: 11192
+		SEND_MAIL,
+		// Token: 0x04002BB9 RID: 11193
+		UPGRADE_BUILDING,
+		// Token: 0x04002BBA RID: 11194
+		DONATE,
+		// Token: 0x04002BBB RID: 11195
+		EXCHANGE,
+		// Token: 0x04002BBC RID: 11196
+		UPGRADE_SKILL,
+		// Token: 0x04002BBD RID: 11197
+		DISMISS,
+		// Token: 0x04002BBE RID: 11198
+		CANCEL_DISMISS,
+		// Token: 0x04002BBF RID: 11199
+		ORZ,
+		// Token: 0x04002BC0 RID: 11200
+		TABLE,
+		// Token: 0x04002BC1 RID: 11201
+		PAY_REDPACKET
+	}
+}
