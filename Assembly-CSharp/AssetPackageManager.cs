@@ -384,15 +384,15 @@ public class AssetPackageManager : Singleton<AssetPackageManager>
 	// Token: 0x0600041E RID: 1054 RVA: 0x0001D7EC File Offset: 0x0001BBEC
 	protected string _GetPlatformUrlHead()
 	{
-		if (Application.platform == 11)
+		if (Application.platform == RuntimePlatform.Android)
 		{
 			return "file://" + Application.persistentDataPath;
 		}
-		if (Application.platform == 8)
+		if (Application.platform == RuntimePlatform.IPhonePlayer)
 		{
 			return "file://" + Application.persistentDataPath;
 		}
-		if (Application.platform == 7)
+		if (Application.platform == RuntimePlatform.WindowsEditor)
 		{
 			return "file:///" + Application.persistentDataPath;
 		}

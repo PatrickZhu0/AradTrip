@@ -179,7 +179,7 @@ namespace GameClient
 		// Token: 0x0600A8CF RID: 43215 RVA: 0x00238E50 File Offset: 0x00237250
 		protected uint[] TestGetEquipFashions(int jobID)
 		{
-			int num = Random.Range(0, 8);
+			int num = UnityEngine.Random.Range(0, 8);
 			uint[] array = new uint[6];
 			for (int i = 0; i < 5; i++)
 			{
@@ -613,7 +613,7 @@ namespace GameClient
 		{
 			if (this.attachModel != null)
 			{
-				Object.Destroy(this.attachModel);
+				UnityEngine.Object.Destroy(this.attachModel);
 				this.attachModel = null;
 			}
 		}

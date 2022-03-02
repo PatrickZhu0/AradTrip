@@ -1947,7 +1947,7 @@ public class BeSkill
 	// Token: 0x06017338 RID: 95032 RVA: 0x00722D00 File Offset: 0x00721100
 	public void SetSkillSpeed(int attackSpeed)
 	{
-		VRate a = this.skillSpeedFactor;
+		VRate a = new VRate(this.skillSpeedFactor);
 		this.skillSpeed = attackSpeed * (a + this.speedAddRate).factor;
 		if (this.skillSpeed < GlobalLogic.VALUE_400)
 		{

@@ -2112,8 +2112,8 @@ public class BeScene : BeStateManager<BeSceneState>
 		{
 			DungeonDropItem dropItem = dropList[i];
 			Vec3 vec = epos.vec3;
-			vec.x += Random.Range(-num3, num3);
-			vec.y += Random.Range(-num3, num3);
+			vec.x += UnityEngine.Random.Range(-num3, num3);
+			vec.y += UnityEngine.Random.Range(-num3, num3);
 			vec.z = 0f;
 			vec.x = Mathf.Clamp(vec.x, this.logicXSize.fx, this.logicXSize.fy);
 			vec.y = Mathf.Clamp(vec.y, this.logicZSize.fx, this.logicZSize.fy);
@@ -2341,20 +2341,22 @@ public class BeScene : BeStateManager<BeSceneState>
 	// Token: 0x0601723C RID: 94780 RVA: 0x0071AED4 File Offset: 0x007192D4
 	public void CreateDestructList2(List<DungeonMonster> destructs)
 	{
-		BeScene.<CreateDestructList2>c__AnonStoreyC <CreateDestructList2>c__AnonStoreyC = new BeScene.<CreateDestructList2>c__AnonStoreyC();
-		<CreateDestructList2>c__AnonStoreyC.$this = this;
+		//BeScene.<CreateDestructList2>c__AnonStoreyC <CreateDestructList2>c__AnonStoreyC = new BeScene.<CreateDestructList2>c__AnonStoreyC();
+		//<CreateDestructList2>c__AnonStoreyC.$this = this;
 		if (this.sceneData == null)
 		{
 			return;
 		}
-		<CreateDestructList2>c__AnonStoreyC.offset = this.sceneData.GetMonsterInfoLength();
-		int i;
-		for (i = 0; i < this.sceneData.GetDestructibleInfoLength(); i++)
+		//<CreateDestructList2>c__AnonStoreyC.offset = this.sceneData.GetMonsterInfoLength();
+		List<DungeonMonster> dungeonMonsterList = destructs;
+		int offset = this.sceneData.GetMonsterInfoLength();
+		for (int i = 0; i < this.sceneData.GetDestructibleInfoLength(); i++)
 		{
-			DungeonMonster dungeonMonster = destructs.Find((DungeonMonster x) => x.pointId % GlobalLogic.VALUE_100 == <CreateDestructList2>c__AnonStoreyC.offset + i && x.typeId == <CreateDestructList2>c__AnonStoreyC.$this.sceneData.GetDestructibleInfo(i).GetEntityInfo().GetResid());
-			if (dungeonMonster != null)
+			DungeonMonster monster = dungeonMonsterList.Find((Predicate<DungeonMonster>)(x => x.pointId % GlobalLogic.VALUE_100 == offset + i && (int)x.typeId == this.sceneData.GetDestructibleInfo(i).GetEntityInfo().GetResid()));
+			//DungeonMonster dungeonMonster = destructs.Find((DungeonMonster x) => x.pointId % GlobalLogic.VALUE_100 == <CreateDestructList2>c__AnonStoreyC.offset + i && x.typeId == <CreateDestructList2>c__AnonStoreyC.$this.sceneData.GetDestructibleInfo(i).GetEntityInfo().GetResid());
+			if (monster != null)
 			{
-				this._createRemoteDestruct(dungeonMonster, this.sceneData.GetDestructibleInfo(i).GetEntityInfo());
+				this._createRemoteDestruct(monster, this.sceneData.GetDestructibleInfo(i).GetEntityInfo());
 			}
 		}
 	}
@@ -3526,8 +3528,7 @@ public class BeScene : BeStateManager<BeSceneState>
 		{
 			return;
 		}
-		Vector3 headPos;
-		headPos..ctor(target.GetPosition().vector3.x, target.m_pkGeActor.GetOverHeadPosition().y, target.GetPosition().vector3.z);
+		Vector3 headPos = new Vector3(target.GetPosition().vector3.x, target.m_pkGeActor.GetOverHeadPosition().y, target.GetPosition().vector3.z);
 		this.TracePosition(target.GetPosition().vec3, false, false, headPos);
 	}
 
@@ -3547,8 +3548,7 @@ public class BeScene : BeStateManager<BeSceneState>
 		}
 		else
 		{
-			Vector2 vector3;
-			vector3..ctor((float)(Screen.width / 2), (float)Screen.height / 2f);
+			Vector2 vector3 = new Vector2((float)(Screen.width / 2), (float)(Screen.height / 2f));
 			bool right = true;
 			vector3.x = (float)Screen.width;
 			if (vector.x < 0f)

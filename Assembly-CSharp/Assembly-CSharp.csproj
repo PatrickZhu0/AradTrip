@@ -17353,6 +17353,7 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\Bin\Debugger.dll" />
+    <Analyzer Include="..\Bin\DOTween.dll" />
     <Analyzer Include="..\Bin\DOTween43.dll" />
     <Analyzer Include="..\Bin\DOTween46.dll" />
     <Analyzer Include="..\Bin\DOTweenPro.dll" />
@@ -17366,6 +17367,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Bin\Debugger.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\Bin\DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween43, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Bin\DOTween43.dll</HintPath>
@@ -17378,6 +17382,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Bin\DOTweenPro.dll</HintPath>
     </Reference>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Bin\System.Xml.dll</HintPath>

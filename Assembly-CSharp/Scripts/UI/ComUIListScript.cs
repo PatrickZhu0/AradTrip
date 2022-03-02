@@ -21,7 +21,7 @@ namespace Scripts.UI
 		// Token: 0x0600980E RID: 38926 RVA: 0x001D2760 File Offset: 0x001D0B60
 		protected GameObject InstantiateElement(GameObject srcGameObject)
 		{
-			GameObject gameObject = Object.Instantiate<GameObject>(srcGameObject);
+			GameObject gameObject = UnityEngine.Object.Instantiate<GameObject>(srcGameObject);
 			gameObject.transform.SetParent(srcGameObject.transform.parent);
 			RectTransform rectTransform = srcGameObject.transform as RectTransform;
 			RectTransform rectTransform2 = gameObject.transform as RectTransform;

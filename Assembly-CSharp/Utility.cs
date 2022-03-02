@@ -276,12 +276,12 @@ public class Utility
 	}
 
 	// Token: 0x060010C2 RID: 4290 RVA: 0x00056413 File Offset: 0x00054813
-	public static void CopyRecursion<T>(GameObject src, GameObject target) where T : Component
+	public static void CopyRecursion<T>(GameObject src, GameObject target) where T : UnityEngine.Component
 	{
 	}
 
 	// Token: 0x060010C3 RID: 4291 RVA: 0x00056418 File Offset: 0x00054818
-	public static T CopyComponent<T>(T original, GameObject destination, bool bNeedRepeat = false) where T : Component
+	public static T CopyComponent<T>(T original, GameObject destination, bool bNeedRepeat = false) where T : UnityEngine.Component
 	{
 		Type type = original.GetType();
 		T t = destination.GetComponent(type) as T;
@@ -624,14 +624,14 @@ public class Utility
 	}
 
 	// Token: 0x060010D5 RID: 4309 RVA: 0x00056B88 File Offset: 0x00054F88
-	public static Component FindComponent(GameObject root, Type type, string path, bool bMustExist = true)
+	public static UnityEngine.Component FindComponent(GameObject root, Type type, string path, bool bMustExist = true)
 	{
 		GameObject gameObject = Utility.FindGameObject(root, path, bMustExist);
 		if (gameObject == null)
 		{
 			return null;
 		}
-		Component component = gameObject.GetComponent(type);
+		UnityEngine.Component component = gameObject.GetComponent(type);
 		if (component == null)
 		{
 			Logger.LogError(string.Concat(new string[]
@@ -1724,7 +1724,7 @@ public class Utility
 	}
 
 	// Token: 0x060010F1 RID: 4337 RVA: 0x000589A8 File Offset: 0x00056DA8
-	public static GameObject FindChildByName(Component component, string childpath)
+	public static GameObject FindChildByName(UnityEngine.Component component, string childpath)
 	{
 		return Utility.FindChildByName(component.gameObject, childpath);
 	}
@@ -1816,7 +1816,7 @@ public class Utility
 	}
 
 	// Token: 0x060010F6 RID: 4342 RVA: 0x00058B2C File Offset: 0x00056F2C
-	public static T GetComponetInChild<T>(GameObject p, string path) where T : Component
+	public static T GetComponetInChild<T>(GameObject p, string path) where T : UnityEngine.Component
 	{
 		if (p == null || p.transform == null)
 		{
@@ -3881,7 +3881,7 @@ public class Utility
 				GameObject gameObject = parent.transform.GetChild(i).gameObject;
 				if (gameObject != null)
 				{
-					Object.Destroy(gameObject);
+					UnityEngine.Object.Destroy(gameObject);
 				}
 				break;
 			}
